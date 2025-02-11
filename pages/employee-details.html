@@ -7,9 +7,25 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <button onclick="location.href='../index.html'" class="back-btn">Back to Home</button>
+    <button onclick="location.href='employees.html'" class="back-btn">Back</button>
     <h1>Employee Records</h1>
     <div class="grid-container" id="employeeGridView"></div>
+
+    <!-- Employee Details Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <h2>Employee Details</h2>
+            <p><strong>ATTUID:</strong> <span id="modal-attuid"></span></p>
+            <p><strong>Name:</strong> <span id="modal-name"></span></p>
+            <p><strong>Email:</strong> <span id="modal-email"></span></p>
+            <p><strong>Phone No:</strong> <span id="modal-phoneno"></span></p>
+            <p><strong>Department:</strong> <span id="modal-department"></span></p>
+            <p><strong>Manager:</strong> <span id="modal-manager"></span></p>
+            <p><strong>Salary:</strong> <span id="modal-salary"></span></p>
+            <button id="closeModal">OK</button>
+        </div>
+    </div>
+
     <script src="../assets/js/employee-details.js"></script>
 </body>
 </html>
